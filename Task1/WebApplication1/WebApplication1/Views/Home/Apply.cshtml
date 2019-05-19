@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Анкета";
+}
+
+<center><h2>Анкета</h2></center>
+<center><h6>@ViewBag.Message</h6></center>
+<div class="container-fluid">
+    <form method="post" action="/Home/CheckInfo">
+        <div class="autorization">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="Name" />
+            <label for="lastName">Ваша фамилия</label>
+            <input type="text" id="lastName" name="LastName" />
+            <label><input type="radio" name="hasjob" value="Есть работа" />Есть работа</label>
+            <label><input type="radio" name="hascar" value="Есть машина"/>Есть машина</label>
+            <label><input type="radio" name="haschildren" value="Есть дети"/>Есть дети</label>
+            <label>Пол:</label>
+            <label><input type="checkbox" name="male" value="Мужской"/>Мужской</label>
+            <label><input type="checkbox" name="female" value="Женский"/>Женский</label>
+            <input type="submit" value="Отправить" class="btn btn-success" />
+        </div>
+    </form>
+</div>
+

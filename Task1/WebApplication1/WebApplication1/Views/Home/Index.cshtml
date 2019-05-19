@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Главная";
+}
+<article>
+    <center><h2>Посмотрите статьи</h2></center>
+    
+    <section>
+        <img src="~/Content/img/2.jpg" />
+        <h3>Ford Mustang</h3>
+        <button class="btn btn-success">Посмотреть</button>
+    </section>
+    <section>
+        <img src="~/Content/img/3.jpg" />
+        <h3>BMW</h3>
+        <button class="btn btn-success">Посмотреть</button>
+    </section>
+    <section>
+        <img src="~/Content/img/4.jpg" />
+        <h3>Medicine</h3>
+        <button class="btn btn-success">Посмотреть</button>
+    </section>
+    <section>
+        <img src="~/Content/img/1.jpg" />
+        <h3>Cooking</h3>
+        <button class="btn btn-success">Посмотреть</button>
+    </section>
+
+</article>
+<aside>
+    <center> @Html.ActionLink("Главная", "Index", "Home")</center>
+    <center> @Html.ActionLink("Гостевая", "Guest", "Home")</center>
+    <center> @Html.ActionLink("Анкета", "Apply", "Home")</center>
+</aside>

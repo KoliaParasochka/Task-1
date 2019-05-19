@@ -1,0 +1,201 @@
+﻿
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Popins' sans-serif;
+    color: #222;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    float: left;
+    background-color: #fafafa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid silver;
+}
+    footer span {
+        margin-left: 10%;
+        
+    }
+
+footer a {
+    margin-right: 10%;
+    
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    margin-left: 30%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 83%;
+    background-color: #f2f2f2;
+    float: left;
+}
+
+.content {
+    padding: 3.3%;
+    height: 100%;
+    width: 80%;
+    float: left;
+    background-color: white;
+    margin-left: 10%;
+}
+
+article {
+    width: 70%;
+    min-height: 100%;
+    float: left;
+    background-color:aliceblue;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 1px solid silver;
+}
+
+
+article div {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid silver;
+}
+
+article div span {
+    float: right;
+    margin-right: 3%;
+    clear: both;
+}
+
+article div h3{
+    clear: both;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: 400px;
+    margin-left: 6.3%;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+section {
+    width: 45%;
+    float: left;
+    height: 350px;
+    margin: 30px 0 0 3.3%;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+section img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+section h3 {
+    float: left;
+    margin-left: 5%;
+
+}
+
+section button {
+    float: right;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.bg {
+    background-color: #262C35;
+}
+
+nav {
+    border-bottom: 2px solid silver;
+}
+
+aside a {
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: all 0.3s;
+    color: #333;
+}
+
+aside a:hover {
+    transition:all 0.3s;
+    color: #808080;
+}
+
+.remark {
+    float: left;
+    width: 25%;
+    height: 60%;
+    margin-left: 3.3%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+}
+
+.remark input {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+
+.remark textarea {
+    float: left;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 10%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+article h3,
+article p {
+    float: left;
+    margin-left: 5%;
+}
+
+article p {
+    width: 100%;
+}
+
+label,input {
+    float: left;
+    clear: both;
+}
+
+.nameInp {
+    width: 60%;
+}
+
+.autorization {
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+}
+
+.autorization input[type='text']{
+    width:40%;
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+
+input[type='radio'],
+input[type='checkbox']{
+    margin-top: 5px;
+}

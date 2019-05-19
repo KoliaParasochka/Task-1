@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Данные анкеты";
+}
+
+@GetData(ViewBag.Person)
+
+@helper GetData(WebApplication1.Storages.Person person)
+{
+    <h3>Данные из анкеты успешно отправлены!</h3>
+    <ul>
+        <li>Имя: @person.Name</li>
+        <li>Фамилия: @person.LastName</li>
+        <li>Пол: @check(person.Male, person.Female)</li>
+        <li>@check(person.HasChildren, "Нет детей")</li>
+        <li>@check(person.HasJob, "Нет работы")</li>
+        <li>@check(person.HasCar, "Нет машины")</li>
+
+    </ul>
+}
+
+@helper check(string a, string b)
+{
+    if (a != null)
+    {
+        @a;
+    }
+    else
+    {
+        @b;
+    }
+}

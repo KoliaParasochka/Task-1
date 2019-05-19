@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Отзывы";
+}
+
+<article>
+    <center><h2>Отзывы</h2></center>
+    @foreach (var el in ViewBag.Remarks)
+    {
+         <div>
+              <h3>@el.Author</h3>
+              <p>@el.Text</p>
+              <span>@el.Date</span>
+          </div>
+    }
+</article>
+<div class="remark">
+    <center><h4>Оставте отзыв</h4></center>
+    <form method="post" action="/Home/Remark" role="form">
+        <div class="form-group">
+            <input type="text" name="author" placeholder="Введите свое имя" class="form-control"/>
+            <textarea name="remark" class="form-control" placeholder="Введите текст"></textarea>
+            <input type="submit" value="Отправить" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
